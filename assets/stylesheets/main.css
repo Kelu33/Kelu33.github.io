@@ -1,0 +1,131 @@
+:root {
+    --1st-color: #212121;
+    --2nd-color: #6D9886;
+    --3rd-color: #D9CAB3;
+    --4th-color: #F6F6F6;
+}
+
+html {
+    color: var(--1st-color);
+    font-family: 'Space Mono', monospace;
+    transition: 150ms;
+}
+html.dark {
+    color: var(--4th-color);
+}
+
+body {
+    line-height: 1.2;
+    letter-spacing: .1rem;
+    text-align: justify;
+    background-color: var(--4th-color);
+    padding: 32px 0;
+    transition: 250ms;
+}
+body.dark {
+    background-color: var(--1st-color);
+}
+
+header, main, footer {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    padding: 0 32px;
+    max-width: 894px;
+}
+
+#darkToggle {
+    position: absolute;
+    right: 32px;
+    top: 0;
+    border-radius: 33%;
+    height: 32px;
+    width: 32px;
+    border-color: var(--2nd-color);
+    cursor: pointer;
+    transition: 250ms;    
+}
+#darkToggle:hover {
+    background-color: var(--1st-color);
+    color: var(--4th-color);
+}
+#darkToggle.dark {
+    background-color: var(--1st-color);
+    color: var(--4th-color);
+}
+#darkToggle.dark:hover {
+    background-color: var(--4th-color);
+    color: var(--1st-color);
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    font-size: large;
+}
+h1, h2 {  
+    line-height: 1.4;  
+    letter-spacing: .4rem;
+}
+h1 span.title {
+    font-size: xxx-large;
+}
+
+ul {
+    list-style: none;
+}
+
+.contact {
+    font-weight: bold;
+    text-align: right;
+}
+
+
+h2, p, ul, .expWrap {
+    margin-bottom: 16px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.title, a {
+    color: var(--2nd-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.school {
+    font-weight: bold;
+}
+
+main h2 {
+    margin-left: 20%;
+}
+.section {
+    display: flex;
+}
+.date {
+    width: calc(20% - 16px);
+    color: var(--3rd-color);
+    text-shadow: 1px 1px 1px var(--1st-color);
+    padding-right: 16px;
+}
+.article {
+    width: 80%;
+}
+
+.columnWrap {
+    display: flex;
+}
+
+.columnWrap > div {
+    width: 50%;
+}
+
+.leftColumn li {
+    padding-right: 32px;
+}
